@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>استبيان حول الموقع</title> 
+</head> 
+    <h1>رايك في موقعنا</h1>
+    <form>
+        <label for="prenom">الاسم:</label>
+    <input type="text" id="prenom" name="prenom" required><br></br>
+        <label for="nom"> اللقب:</label>
+        <input type="text" id="nom" name="nom" required><br></br>
+        <label for="date_naissance">تاريخ الميلاد:</label>
+        <input type="date"id="date_naissance" required><br><br>
+        <label for="genre">الجنس:</label>
+        <select id="genre" name="genre" required>
+<option value="homme">ذكر</option>
+    <option value="femme">انثى</option>
+        <option value="autre">غير محدد</option>
+        </select><br><br>
+        <label for="email">البريد الاكتروني:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="gouvernorat">الولاية:</label>
+        <select id="gouvernorat" name="gouvernorat" required>
+            <option value="اختر الولاية"></option>
+            <option value="tozeur">توزر</option>
+        <option value="kebili">قبلي</option>
+        <option value="banzart">بنزرت</option>
+        <option value="sfax">صفاقس</option>
+        <option value="jendouba">جندوبة</option>
+        <option value="ariana">اريانة</option>
+        <option value="ben arous">بن عروس</option>
+        <option value="gabes">قابس</option>
+        <option value="baja">باجة</option>
+        <option value="medenine">مدنين</option>
+        <option value="monastir">المستير</option>
+        <option value="jerba">جربة</option>
+        <option value="manouba">منوبة</option>
+        <option value="sousse">سوسة</option>
+        <option value=" el kef">الكاف</option>
+        </select><br><br>
+        <label for="avis">رايك:</label><br>
+        <textarea id="avis" name="avis" rows="8" cols="30" required></textarea><br><br>
+        <label for="note">(من1 الى 5):التقيم</label>
+        <input type="number" id="notre" name="note" min="1" max="5" required><br><br>
+        <button type="submit">ارسال</button>
+    </form>
+</body>
+</html>
